@@ -1,0 +1,9 @@
+<template>
+  <template>
+    <ul>
+        <li>履歴1</li>
+        <li>履歴2</li>
+        <li>履歴3</li>
+    </ul>
+  </template>
+</template>
