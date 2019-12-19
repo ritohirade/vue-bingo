@@ -1,9 +1,15 @@
 <template>
-  <template>
-    <ul>
-        <li>履歴1</li>
-        <li>履歴2</li>
-        <li>履歴3</li>
-    </ul>
-  </template>
+  <ul>
+    <li v-for"number in history>{{ number }}</li>
+  </ul>
 </template>
+
+<script>
+  export default{
+    computed: {
+      history() {
+        return this.$store.state.history.concat().reverse();
+      }
+    }
+  }
+</script>
